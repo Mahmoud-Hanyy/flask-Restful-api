@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Sign Up Form
+    </title>
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	
+	<hr>
+			<div class="user-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="text" name="Email" id="Email">
+                    </div>
+                    <div>
+                        <label>ID</label>
+                        <input type="text" name="ID" id="ID">
+                    </div>
+                    <div>
+                        <label>Gender</label>
+                        <input type="text" name="Gender" id="Gender">
+                    </div>
+                    <div>
+                        <label>Age</label>
+                        <input type="text" name="Age" id="Age">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "user-table">
+                <table class="list" id="userList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>ID</th>
+                            <th>Email</th>
+                            <th>Gender</th>
+                            <th>Age</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+ 
+<script src="script.js"></script>
+
+  
+    
+
+</body>
+</html>
